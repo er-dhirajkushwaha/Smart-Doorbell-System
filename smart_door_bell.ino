@@ -9,18 +9,18 @@
 #define LED_PIN 2            // D4 Built-in LED for indication
 
 // ---------- WiFi Credentials ----------
-const char* ssid = "nicht";
-const char* password = "batadeni likh";
+const char* ssid = "";
+const char* password = "";
 
 // ---------- Telegram Bot ----------
-#define BOT_TOKEN "8268657197:AAHmgilyns2Qk_ifUziFx1Sl7T6I0Na4JdM"
+#define BOT_TOKEN ""
 WiFiClientSecure client;
 UniversalTelegramBot bot(BOT_TOKEN, client);
 
 // ---------- Authorized Users ----------
 String chatIds[] = {
-  "5372362550", // Dhiraj
-  "6912081643"  // Karan
+  "", // Dhiraj
+  ""  // Karan
 };
 int chatCount = sizeof(chatIds)/sizeof(chatIds[0]);
 
